@@ -1,0 +1,34 @@
+models: Esta pasta geralmente contém definições de modelos de dados, como 
+classes que representam objetos no seu sistema. Por exemplo, se você estiver 
+construindo um sistema de gerenciamento de tarefas, poderia ter um modelo de 
+"Tarefa" definido nesta pasta.
+
+schemas: Esta pasta pode conter os esquemas de validação de dados, especialmente 
+se você estiver trabalhando com APIs ou validação de entrada de usuários. 
+Aqui você pode definir esquemas JSON ou usar bibliotecas como marshmallow para 
+validar e serializar dados.
+
+repositories: Aqui você pode ter as classes ou funções responsáveis pela 
+interação com o banco de dados ou qualquer outro sistema de armazenamento de 
+dados. É onde você coloca a lógica para criar, ler, atualizar e excluir (CRUD) 
+os dados do seu aplicativo.
+
+controllers ou views: Dependendo da arquitetura que você está seguindo (como 
+MVC - Model-View-Controller), esta pasta contém a lógica de negócios do seu 
+aplicativo. Aqui você implementa a lógica para manipular as requisições do 
+usuário, processar dados e enviar respostas.
+
+utils ou helpers: Esta pasta geralmente contém funções ou classes de propósito 
+geral que são úteis em todo o projeto. Pode incluir funções de utilidade, 
+configurações globais, constantes, etc.
+
+tests: Esta pasta contém todos os seus casos de teste. É uma prática comum 
+manter os testes separados do código principal para facilitar a manutenção e 
+execução dos testes automatizados.
+
+static ou assets: Se o seu projeto incluir arquivos estáticos, como imagens, 
+folhas de estilo CSS ou arquivos JavaScript, você pode organizá-los nesta pasta.
+
+templates: Se você estiver desenvolvendo uma aplicação web usando um framework 
+como Flask ou Django, esta pasta pode conter os arquivos de modelo (templates) 
+HTML que são usados para renderizar as páginas da web.
