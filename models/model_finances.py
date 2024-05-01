@@ -1,3 +1,4 @@
+from datetime import datetime
 from pydantic import BaseModel
 
 
@@ -6,4 +7,4 @@ class Finances(BaseModel):
     description: str
     type: str
     value: float
-    date: str
+    date: datetime

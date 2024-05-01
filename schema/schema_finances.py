@@ -14,13 +14,12 @@ def list_incomes(incomes):
 
 
 def add_expenses(expense) -> dict:
-    neg_value = float(expense["value"] * -1)
     return {
         "id": str(expense["_id"]),
         "title": str(expense["title"]),
         "description": str(expense["description"]),
         "type": str(expense["type"]),
-        "value": neg_value,
+        "value": float(expense["value"]),
         "date": str(expense["date"]),
     }
 

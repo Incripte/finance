@@ -20,11 +20,11 @@ async def get_finances():
     return list_incomes(finances_collection.find())
 
 
-@router.post("/expense/", tags=["finances"])
-async def post_expenses(expense: Finances):
-    return finances_collection.insert_one(dict(expense))
-
-
 @router.post("/income/", tags=["finances"])
 async def post_incomes(income: Finances):
     finances_collection.insert_one(dict(income))
+
+
+@router.post("/expense/", tags=["finances"])
+async def post_expenses(expense: Finances):
+    finances_collection.insert_one(dict(expense))
