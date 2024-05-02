@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/finance.css">
+    <title>Lançar Finança</title>
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/frontend/index.html">Voltar</a>
+    <div class="container">
+        <h2>Criar Lançamento</h2>
+        <form id="form-lancamento">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="text" id="type" placeholder="Type" required>
+            <input type="number" id="value" placeholder="Value" required>
+            <input type="datetime-local" id="date" required>
+            <input type="submit" value="Criar">
+        </form>
+    </div>
+    <script src="assets/js/send_form.js"></script>
+</body>
+</html>
